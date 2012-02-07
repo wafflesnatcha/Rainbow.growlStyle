@@ -1,0 +1,125 @@
+html, body {
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #fff;
+	font-family: "Lucida Grande", "Lucida Sans", Helvetica, sans-serif;
+	font-size: 100%;
+	min-width: 322px;
+}
+
+.clear {
+	clear: both;
+}
+
+#wrapper {
+	-webkit-border-radius: 8px;
+	-webkit-box-shadow: inset 0 0 0 2px rgba(255,255,255,0), 0 0 1px 1px rgba(0,0,0,0);
+	-webkit-box-sizing: border-box;
+	-webkit-transition: -webkit-box-shadow .2s;
+	background: none;
+	border: none;
+	margin: 6px 4px 4px 8px;
+	opacity: 1;
+	padding: 7px 10px;
+	position: relative;
+}
+
+*:hover #wrapper {
+	-webkit-box-shadow: inset 0 0 0 2px rgba(255,255,255,1), 0 0 1px 1px rgba(0,0,0,.1);
+}
+
+#background {
+	-webkit-border-radius: 8px;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+	background: #1a1a1a;
+	border: none;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+	margin: 1px;
+}
+
+#icon {
+	float: left;
+	margin: 0 10px 0 0;
+	max-height: 32px;
+	padding: 0;
+	text-align: center;
+	width: 32px;
+}
+#icon img {
+	max-width: 32px;
+}
+
+#text {
+	margin-left: 42px;
+	text-align: left;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.75);
+	word-wrap: break-word;
+}
+#text-title,
+#text-message {
+	-webkit-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+#text-title {
+	font-size: 12px;
+	font-weight: bold;
+}
+#text-message {
+	font-size: 11px;
+	padding: 3px 0 1px;
+}
+
+
+.priority-verylow,
+.priority-moderate {
+	min-width: 280px;
+}
+.priority-verylow #icon,
+.priority-moderate #icon {
+	display: none;
+}
+.priority-verylow #text,
+.priority-moderate #text {
+	margin-left: 0px;
+}
+
+.priority-verylow #text-title {
+	white-space: nowrap;
+	overflow: hidden;
+}
+.priority-verylow #text-message {
+	display: none;
+}
+
+.priority-high #wrapper {
+	-webkit-animation-duration: .4s;
+	-webkit-animation-iteration-count: 4;
+	-webkit-animation-name: 'pulsate-wrapper-high';
+}
+.priority-emergency #wrapper {
+	-webkit-animation-duration: .4s;
+	-webkit-animation-iteration-count: 4;
+	-webkit-animation-name: 'pulsate-wrapper-emergency';
+}
+
+@-webkit-keyframes 'pulsate-wrapper-high' {
+	0% {}
+	50% { -webkit-box-shadow: inset 0 0 0 2px rgba(255,255,255,1), 0 0 1px 1px rgba(0,0,0,.1); }
+	100% {}
+}
+
+@-webkit-keyframes 'pulsate-wrapper-emergency' {
+	0% {}
+	50% { -webkit-box-shadow: inset 0 0 0 2px rgba(255,30,30,1), 0 0 1px 1px rgba(0,0,0,.1); }
+	100% {}
+}

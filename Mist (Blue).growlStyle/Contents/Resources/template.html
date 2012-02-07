@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>%title%</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<base href="%baseurl%" />
+	<style type="text/css">
+	@import URL("default.css");
+	#background {
+		opacity: %opacity%;
+	}
+	</style>
+</head>
+<body class="priority-%priority%" title="%title">
+	<div id="wrapper">
+		<div id="background"></div>
+		<div id="icon">
+			<img src="growlimage://%image%" alt="icon" title="%text%" />
+		</div>
+		<div id="text">
+			<div id="text-title">
+				<span id="text-title-content">%title%</span>
+			</div>
+			<div id="text-message">
+				<span id="text-message-content">%text%</span>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>
