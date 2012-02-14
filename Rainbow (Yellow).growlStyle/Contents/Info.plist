@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>http://holdontoyourbutts.com</string>
+	<string>Rainbow Growl Style (Yellow)</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -25,14 +25,14 @@
 	<key>CSResourcesFileMapped</key>
 	<string>yes</string>
 	<key>GrowlPluginAuthor</key>
-	<string>Scott</string>
+	<string>Scott Buchanan</string>
 	<key>GrowlPluginDescription</key>
 	<string>A simple webkit Growl display with various colors.</string>
 	<key>GrowlHasShadow</key>
 	<false/>
 	<key>GrowlPaddingX</key>
-	<integer>6</integer>
+	<real>6</real>
 	<key>GrowlPaddingY</key>
-	<integer>0</integer>
+	<real>0</real>
 </dict>
 </plist>
